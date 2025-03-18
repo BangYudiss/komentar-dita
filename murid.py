@@ -6,7 +6,7 @@ import re
 import joblib
 import streamlit as st
 import nltk
-nltk.download('punkt')
+
 
 model = joblib.load('svc_baru.pkl')
 vectorizer = joblib.load('vec_baru.pkl')
@@ -21,6 +21,8 @@ def cleaning(komen):
     return komen
 
 def tokenizing(komen):
+    
+    nltk.download('punkt_tab')
     from nltk.tokenize import word_tokenize
     komen = word_tokenize(komen)
     return komen
