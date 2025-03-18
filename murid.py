@@ -6,7 +6,7 @@ import re
 import joblib
 import streamlit as st
 import nltk
-nltk.download('punkt_tab')
+nltk.download('punkt')
 
 model = joblib.load('svc_baru.pkl')
 vectorizer = joblib.load('vec_baru.pkl')
