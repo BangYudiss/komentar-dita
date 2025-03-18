@@ -6,8 +6,8 @@ import re
 import joblib
 import streamlit as st
 
-model = joblib.load('HabisCleaning/svc_baru.pkl')
-vectorizer = joblib.load('HabisCleaning/vec_baru.pkl')
+model = joblib.load('svc_baru.pkl')
+vectorizer = joblib.load('vec_baru.pkl')
 kamus = joblib.load('kamus2.pkl')
 
 def cleaning(komen):
