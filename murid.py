@@ -5,6 +5,8 @@ import seaborn as sns
 import re
 import joblib
 import streamlit as st
+import nltk
+nltk.download('punkt_tab')
 
 model = joblib.load('svc_baru.pkl')
 vectorizer = joblib.load('vec_baru.pkl')
