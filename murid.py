@@ -21,7 +21,6 @@ def cleaning(komen):
     return komen
 
 def tokenizing(komen):
-    
     nltk.download('punkt_tab')
     from nltk.tokenize import word_tokenize
     komen = word_tokenize(komen)
